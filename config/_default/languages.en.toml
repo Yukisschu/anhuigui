@@ -6,7 +6,7 @@ weight = 1
 rtl = false
 
 title = "Blowfish"
-logo = "img/avatartion.png"
+logo = "img/avata.png"
 description = "Anhui Gui | 桂安慧"
 # copyright = "Copy, _right?_ :thinking_face:"
 
@@ -14,7 +14,7 @@ dateFormat = "2 January 2006"
 
 [author]
   name = "Anhui Gui"
-  image = "img/frontpage.jpeg"
+  image = "img/anhui.jpeg"
   headline = "Anhui's personal website"
   bio = "This is Anhui!"
    links = [
