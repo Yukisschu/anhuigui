@@ -6,15 +6,15 @@ weight = 1
 rtl = false
 
 title = "Blowfish"
-# logo = "img/logo.png"
-description = "My awesome website"
+logo = "img/avatartion.png"
+description = "Anhui Gui | 桂安慧"
 # copyright = "Copy, _right?_ :thinking_face:"
 
 dateFormat = "2 January 2006"
 
 [author]
-  name = "Anhui Gui | 桂安慧"
-  image = "img/redpanda.jpeg"
+  name = "Anhui Gui"
+  image = "img/frontpage.jpeg"
   headline = "Anhui's personal website"
   bio = "This is Anhui!"
    links = [
@@ -39,7 +39,7 @@ dateFormat = "2 January 2006"
   #   { kickstarter = "https://www.kickstarter.com/profile/username" },
   #   { lastfm = "https://lastfm.com/user/username" },
   #   { linkedin = "https://linkedin.com/in/username" },
-  #   { mastodon = "https://mastodon.instance/@username" },
+     { mastodon = "https://datasci.social/@Yuki" },
   #   { medium = "https://medium.com/username" },
   #   { microsoft = "https://www.microsoft.com/" },
   #   { orcid = "https://orcid.org/userid" },
