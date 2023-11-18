@@ -13,12 +13,12 @@ description = "Anhui Gui | 桂安慧"
 dateFormat = "2 January 2006"
 
 [author]
-  name = "Anhui Gui"
-  image = "img/anhui.jpeg"
+  name = "Hi! This is Anhui Gui!"
+  image = "img/anhui2.jpeg"
   headline = "Anhui's personal website"
-  bio = "This is Anhui!"
+  bio = "Make it happen."
    links = [
-     { email = "Anhui_Gui@outlook.com" },
+     { email = "http://Anhui_Gui@outlook.com" },
   #   { link = "https://link-to-some-website.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
   #   { apple = "https://www.apple.com" },

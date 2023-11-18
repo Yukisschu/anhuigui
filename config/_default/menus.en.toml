@@ -13,18 +13,18 @@
 [[main]]
   name = "Home"
   pageRef = "pages"
-  weight = 40
+  weight = 10
 
 [[main]]
   name = "Projects"
   pageRef = "projects"
-  weight = 30
+  weight = 20
 
 
 [[main]]
   name = "Blog"
   pageRef = "posts"
-  weight = 10
+  weight = 30
 
 
 
