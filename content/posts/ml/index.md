@@ -2,7 +2,6 @@
 title = 'A Brief Summary of Machine Learning'
 date = 2023-11-18T17:36:18+01:00
 draft = false
-permalink = "/blog/machine-learning/"
 +++
 
 {{< lead >}}
@@ -279,16 +278,15 @@ To build machine learning models into real-world usage, a widely adopted framewo
 ## 4.2. Using Supervised Machine Learning Algorithms for Housing Prediction
 This section showcases the application of supervised machine learning algorithms for housing prediction, a real-world scenario, to make the above theories more vivid and tangible. Leveraging advanced computational techniques, supervised learning methods harness labeled datasets to train models capable of making predictions and uncovering patterns within housing-related data. From predicting property prices to assessing market trends and optimizing decision-making processes, these algorithms offer valuable insights into the dynamic and multifaceted realm of real estate. The linked article explores the methodologies, considerations, and key principles underpinning the implementation of supervised learning in the context of housing prediction, aiming to provide a comprehensive understanding of how these powerful tools contribute to data-driven analyses and informed decision-making within the housing domain.
 
-{{< article link="/blog/machine-learning/" >}}
+{{< article link="content/posts/machine learning" >}}
 
 <div style="display:flex; gap:6px">
 
 {{< badge >}} summary {{< /badge >}}
 
-{{< badge >}} machine learning {{< /badge >}}
-
 {{< badge >}} artificial intelligence {{< /badge >}}
 
+{{< badge >}} machine learning {{< /badge >}}
 </div>
 
 

@@ -28,3 +28,6 @@ buildFuture = false
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+custom_css = ["css/custom.css"]
+custom_js = ["js/custom.js"]
