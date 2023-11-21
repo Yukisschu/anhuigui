@@ -26,8 +26,17 @@
   pageRef = "posts"
   weight = 30
 
+[[main]]
+  identifier = "mastodon"
+  pre = "mastodon"
+  url = "https://datasci.social/@Yuki"
+  weight = 300
 
-
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/Yukisschu"
+  weight = 200
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
@@ -43,3 +52,13 @@
 #   name = "Categories"
 #   pageRef = "categories"
 #   weight = 20
+
+ [[footer]]
+   name = "Tags"
+   pageRef = "tags"
+   weight = 10
+
+#[[footer]]
+#  name = "Authors"
+#  pageRef = "authors"
+#  weight = 20

@@ -15,6 +15,13 @@ enableCodeCopy = true
 # mainSections = ["section1", "section2"]
 # robots = ""
 
+highlightCurrentMenuArea = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = false
+
+[header]
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
+
 [footer]
   showCopyright = true
   showThemeAttribution = true
@@ -22,12 +29,13 @@ enableCodeCopy = true
   showScrollToTop = true
 
 [homepage]
-  layout = "hero" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "bg.jpg" # used in: hero, and card
-  showRecent = false
+  layout = "background" # valid options: page, profile, hero, card, background, custom
+  homepageImage = "/img/bg8.jpg" # used in: hero, and card
+  showRecent = true
   showRecentItems = 5
-  showMoreLink = false
-  showMoreLinkDest = "/posts"
+  showMoreLink = true
+  showMoreLinkDest = "posts"
+  
 
 [article]
   showDate = true
@@ -36,7 +44,7 @@ enableCodeCopy = true
   showDateUpdated = true
   showAuthor = true
   showHero = true
-  heroStyle = "basic" # valid options: basic, big, background
+  heroStyle = "background" # valid options: basic, big, background
   showBreadcrumbs = true
   showDraftLabel = true
   showEdit = true
@@ -48,24 +56,34 @@ enableCodeCopy = true
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
-  showTaxonomies = false 
-  showAuthorsBadges = false 
+  showTaxonomies = true 
+  showAuthorsBadges = true 
   showWordCount = true
   showSummary = true
   sharingLinks = [ "linkedin", "twitter", "whatsapp", "pinterest", "reddit", "facebook", "email"]
 
 [list]
+  showHero = true
+  layoutBackgroundBlur = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showSummary = false
-  showTableOfContents = false
-  showCards = false
+  showTableOfContents = true
+  showCards = true
   groupByYear = true
+  cardView = true
 
 [sitemap]
   excludedKinds = []
 
 [taxonomy]
   showTermCount = true
+  showHero = true
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  #showViews = true
+  #showLikes = true
+  showTableOfContents = true
+  cardView = false
 
 [firebase]
   # apiKey = "XXXXXX"

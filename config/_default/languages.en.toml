@@ -13,9 +13,9 @@ description = "Anhui Gui | 桂安慧"
 dateFormat = "2 January 2006"
 
 [author]
-  name = "Hi! This is Anhui Gui!"
+  name = "Hi! This is Anhui!"
   image = "img/anhui2.jpeg"
-  headline = "Anhui's personal website"
+  headline = "Make it happen."
   bio = "Make it happen."
    links = [
      { email = "http://Anhui_Gui@outlook.com" },
