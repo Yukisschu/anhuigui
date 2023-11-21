@@ -2,6 +2,8 @@
 title = 'A Brief Summary of Machine Learning'
 date = 2023-11-18T17:36:18+01:00
 draft = false
+slug = 'machine-learning'
+tags = ['summary', 'machine learning', 'artificial intelligence']
 +++
 
 {{< lead >}}
@@ -172,7 +174,7 @@ Balancing between overfitting and underfitting involves finding the right level 
 
 ![Sweet Spot](sweetspot.png)
 
-### 3.3. Bayesian Classifier
+### 3.3. Bayesian Classifiers
 A Bayesian classifier is a probabilistic model that uses Bayes' theorem to classify instances into different classes. Bayes' theorem is based on prior knowledge of conditions that might be related to the event [^3].
 Bayes' Theorem is as follows[^4]:
 <div style="text-align: center;">
@@ -266,7 +268,7 @@ Where:
 - \\(\textit{FP}\\) means false positives, denoting scenarios where the model wrongly classifies the positive class in cases where the actual class is negative (e.g., incorrectly labelling a 0 as 1).
 - \\(\textit{FN}\\) indicates false negatives, indicating the model incorrectly classifies the negative class when the actual class is positive (e.g., wrongly categorizing a 1 as 0).
 
-## 4. Machine Learning Used Cases
+## 4. Machine Learning Using Cases
 
 ## 4.1. Cross-industry Standard Process for Data Mining Model
 To build machine learning models into real-world usage, a widely adopted framework that guides the entire data mining process is Cross-Industry Standard Process for Data Mining (CRISP-DM) methodology. Comprising six phases, CRISP-DM begins with understanding the business objectives and data, followed by data preparation, modeling, evaluation, and deployment. The iterative nature of CRISP-DM allows for revisiting and refining each phase, ensuring alignment with business goals. From defining project objectives and exploring datasets to deploying models into operational processes, CRISP-DM promotes a structured and collaborative approach, making it adaptable to various industries and providing a robust foundation for successful data mining projects[^9].
@@ -278,7 +280,7 @@ To build machine learning models into real-world usage, a widely adopted framewo
 ## 4.2. Using Supervised Machine Learning Algorithms for Housing Prediction
 This section showcases the application of supervised machine learning algorithms for housing prediction, a real-world scenario, to make the above theories more vivid and tangible. Leveraging advanced computational techniques, supervised learning methods harness labeled datasets to train models capable of making predictions and uncovering patterns within housing-related data. From predicting property prices to assessing market trends and optimizing decision-making processes, these algorithms offer valuable insights into the dynamic and multifaceted realm of real estate. The linked article explores the methodologies, considerations, and key principles underpinning the implementation of supervised learning in the context of housing prediction, aiming to provide a comprehensive understanding of how these powerful tools contribute to data-driven analyses and informed decision-making within the housing domain.
 
-{{< article link="content/posts/machine learning" >}}
+{{< article link="/posts/thesis/" >}}
 
 <div style="display:flex; gap:6px">
 
