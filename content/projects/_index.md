@@ -1,6 +1,6 @@
 ---
 #title: "Fragments of Thoughts"
-description: "Posts capture some of my ideas."
+description: "Make knowledge tangible."
 
 cascade:
   showDate: true
@@ -14,7 +14,7 @@ cascade:
 ---
 
 {{< lead >}}
-Fragments of Thoughts.
+Embodiments of Knowledge..
 {{< /lead >}}
 
 ---
