@@ -3,7 +3,7 @@ title = 'A Brief Summary of Machine Learning'
 date = 2023-11-18T17:36:18+01:00
 draft = false
 slug = 'machine-learning'
-tags = ['summary', 'machine learning', 'artificial intelligence']
+tags = ['machine learning', 'artificial intelligence', 'summary']
 +++
 
 {{< lead >}}
@@ -91,7 +91,7 @@ A popular clustering algorithm is ***K-means clustering***. The *means* are the 
 <em>Figure 2. Animation of K-means Clustering</em>
 </p>
 
-![k-means](kmeans.gif "Image source: [code-specialist.com](https://code-specialist.com/python/k-means-algorithm)")
+![k-means](feature.gif "Image source: [code-specialist.com](https://code-specialist.com/python/k-means-algorithm)")
 There is no guarantee a single run of k-means will result in good clustering. The result of a single clustering will find a local optimum, but will be dependent on the initial chosen centroid locations. Hence, k-means usually run many times, starting with different random centroids each time. Results are compared by examining the clusters or the clusters’ distortion; the sum of squared differences between each data point and its corresponding centroid. 
 
 {{< alert "bell" >}}
@@ -284,11 +284,11 @@ This section showcases the application of supervised machine learning algorithms
 
 <div style="display:flex; gap:6px">
 
-{{< badge >}} summary {{< /badge >}}
-
 {{< badge >}} artificial intelligence {{< /badge >}}
 
 {{< badge >}} machine learning {{< /badge >}}
+
+{{< badge >}} summary {{< /badge >}}
 </div>
 
 
