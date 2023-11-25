@@ -9,6 +9,9 @@ draft = true
 TODO
 {{< /lead >}}
 
+
+BERTopic is an open-source library for Topic extraction based on the BERT NLP model.
+To Learn More about BERTopic, please check out the Github repo:
 {{< github repo="MaartenGr/BERTopic" >}}
 
 ## The Code
