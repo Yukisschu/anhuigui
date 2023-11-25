@@ -126,7 +126,7 @@ Insomnia
 Family
 {{< /typeit >}}
 
-{{< article link="/anhuigui/projects/bert/" >}}
+{{< article link="/anhuigui/projects/suibert/" >}}
 
 {{< chart >}}
 type: 'bar',
