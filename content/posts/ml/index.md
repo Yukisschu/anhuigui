@@ -175,7 +175,7 @@ Balancing between overfitting and underfitting involves finding the right level 
 ![Sweet Spot](sweetspot.png)
 
 ### 3.3. Bayesian Classifiers
-A Bayesian classifier is a probabilistic model that uses Bayes' theorem to classify instances into different classes. Bayes' theorem is based on prior knowledge of conditions that might be related to the event [^3].
+A Bayesian classifier is a probabilistic model that uses Bayes' theorem to classify instances into different classes. Bayes' theorem is based on prior knowledge of conditions that might be related to the event[^3].
 Bayes' Theorem is as follows[^4]:
 <div style="text-align: center;">
 
