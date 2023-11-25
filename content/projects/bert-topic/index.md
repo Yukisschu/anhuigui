@@ -7,7 +7,7 @@ draft = true
 
 {{< lead >}}
 Suicide stands as a pressing global concern, underscoring the imperative for proactive detection and robust protective
-measures. In pursuit of ground-based countermeasures, this study delves deeply into suicide-related disclosure on
+measures. In pursuit of ground-based countermeasures, this project delves deeply into suicide-related disclosure on
 platform X. It employs comprehensive pattern analyses and topic extraction to uncover distinctive patterns within both
 suicidal and non-suicidal groups.
 {{< /lead >}}
