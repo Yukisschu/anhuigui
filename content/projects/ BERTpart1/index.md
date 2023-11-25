@@ -3,7 +3,7 @@ title = 'Analyzing Suicide-Related Discourse on X: A BERT-Based Exploration of E
 date = 2023-11-18T17:36:18+01:00
 draft = false
 slug = 'suicide-analysis'
-tags = ['machine learning', 'social media analysis', 'mental health', 'user engagement', 'article']
+tags = ['machine learning', 'social media analysis', 'mental health', 'user engagement', 'project']
 +++
 
 {{< lead >}}
@@ -23,7 +23,7 @@ Suicide is a major global concern, causing over 700,000 deaths annually. Suicide
 
 {{< badge >}} user engagement {{< /badge >}}
 
-{{< badge >}} article {{< /badge >}}
+{{< badge >}} project {{< /badge >}}
 </div>
 
 
