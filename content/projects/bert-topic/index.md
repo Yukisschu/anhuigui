@@ -9,8 +9,8 @@ draft = true
 Suicide stands as a pressing global concern, underscoring the imperative for proactive detection and robust protective measures. In pursuit of ground-based countermeasures, this study delves deeply into suicide-related disclosure on platform X. It employs comprehensive pattern analyses and topic extraction to uncover distinctive patterns within both suicidal and non-suicidal groups.
 {{< /lead >}}
 
-
-BERTopic is an open-source library for Topic extraction based on the BERT NLP model.
+## BERTopic
+BERTopic is an open-source library for topic extraction based on the BERT NLP model.
 To Learn More about BERTopic, please check out the Github repo:
 {{< github repo="MaartenGr/BERTopic" >}}
 
