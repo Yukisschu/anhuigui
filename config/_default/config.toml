@@ -13,6 +13,9 @@ summaryLength = 30
 buildDrafts = false
 buildFuture = false
 
+pygmentsUseClasses=true
+pygmentsCodeFences=true
+
 # googleAnalytics = "G-XXXXXXXXX"
 
 [taxonomies]
@@ -28,5 +31,3 @@ buildFuture = false
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-
-
