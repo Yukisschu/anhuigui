@@ -58,13 +58,11 @@ jobs:
         run: |
           hugo \
             --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --minify          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./public
-          cname: anhui-gui.com
 
   # Deployment job
   deploy:
@@ -77,4 +75,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          cname: anhui-gui.com
+
         
