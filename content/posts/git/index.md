@@ -1,7 +1,7 @@
 +++
 title = 'Basic Jargons in Git'
 date = 2023-11-23T17:36:18+01:00
-draft = false
+draft = true
 slug = 'git-commands' 
 tags = [ 'git', 'summary']
 +++
@@ -39,8 +39,3 @@ P.S. Here is a fun website also recommended by Juju, [Learn Git Branching](https
 
 {{< badge >}} summary {{< /badge >}}
 </div>
-
-
-
-
-
