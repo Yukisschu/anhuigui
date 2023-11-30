@@ -1,7 +1,7 @@
 +++
 title = 'Analyzing Suicide-Related Discourse on X: A BERT-Based Exploration of Emotion Dimensions, Engagement, and Topic Patterns'
 date = 2023-11-18T17:36:18+01:00
-draft = false
+draft = true
 slug = 'suicide-analysis'
 tags = ['machine learning', 'social media analysis', 'mental health', 'user engagement', 'article']
 +++
