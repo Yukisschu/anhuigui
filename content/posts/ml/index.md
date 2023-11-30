@@ -1,7 +1,7 @@
 +++
 title = 'A Brief Summary of Machine Learning'
 date = 2023-11-18T17:36:18+01:00
-draft = false
+draft = true
 slug = 'machine-learning'
 tags = ['machine learning', 'artificial intelligence', 'summary']
 +++
