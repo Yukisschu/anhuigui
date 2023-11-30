@@ -1,7 +1,7 @@
 +++
 title = 'A Brief Summary of Machine Learning'
 date = 2023-11-18T17:36:18+01:00
-draft = true
+draft = false
 slug = 'machine-learning'
 tags = ['machine learning', 'artificial intelligence', 'summary']
 +++
@@ -299,6 +299,3 @@ This section showcases the application of supervised machine learning algorithms
 [^3]: Joyce, J. (2003). Bayes’ theorem.
 [^4]: Stuart, A., & Ord, K. (2010). Kendall's advanced theory of statistics, distribution theory (Vol. 1). John Wiley & Sons.
 [^9]: Shearer, C. (2000). The CRISP-DM model: the new blueprint for data mining. Journal of data warehousing, 5(4), 13-22.
-
-
-
