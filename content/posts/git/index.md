@@ -9,7 +9,7 @@ tags = [ 'git', 'summary']
 {{< lead >}}
 When I asked Juju, "What are your favourite programming languages?" Git was one of the answers I received. Afterward, I embarked on the study of git, and I was deeply impressed by its power and conciseness.
 
-This led me to write a blog documenting some common Git usages I studied, and it will be updated whenever new thoughts and knowledge are added about Git. Most of the concepts come from [Learn](https://learngitbranching.js.org/) Git Branching](https://learngitbranching.js.org/) (recommended by Juju, too), which visualizes Git operations. Most importantly, it does not require an internet connection (It became my good pal during travels in Switzerland when I had no internet on the train! :P).
+This led me to write a blog documenting some common Git usages I studied, and it will be updated whenever new thoughts and knowledge are added about Git. Most of the concepts come from [Learn Git Branching](https://learngitbranching.js.org/) (recommended by Juju, too), which visualizes Git operations. Most importantly, it does not require an internet connection (It became my good pal during travels in Switzerland when I had no internet on the train! :P).
 {{< /lead >}}
 
 ## 1. What is Git

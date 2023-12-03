@@ -14,7 +14,7 @@ cascade:
 ---
 
 {{< lead >}}
-Embodiments of Knowledge..
+Embodiments of Knowledge.
 {{< /lead >}}
 
 ---
