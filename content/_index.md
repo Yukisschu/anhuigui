@@ -6,11 +6,9 @@ description: "Record and share."
 Hi! Welcome to my website! 
 :smiling_face_with_open_hands:<br>
 {{< /lead >}}
-I am Anhui, I obtained my Master's degree in Business Administration: Digital Business (with distinction) from the [Amsterdam Business School](https://abs.uva.nl/) at the [University of Amsterdam](https://www.uva.nl/).<br>
+I am Anhui, I obtained my Master's degree in Business Administration: Digital Business (with distinction) from the [University of Amsterdam](https://www.uva.nl/). My primary research interest lies in utilising machine learning techniques to reveal inherent patterns and gain insights from online data, with a specific focus on the downstream application in suicide prevention.<br>
 
-My primary research interest lies in utilising machine learning techniques to gain insights from online data and reveal inherent patterns with a specific focus on Natural Language Processing (NLP) and its applications in downstream suicide prevention efforts.<br>
-
-I created this website to share what I have learned and what I love. You can explore the [projects]({{< ref "projects" >}}) to take a look at the data science-related projects I have done or am currently working on. You can also find some [summaries]({{< ref "posts" >}}) covering computer science-related knowledge, such as `machine learning`, `git`, `website`, that I've acquired and believe might be helpful. Using the [Tags]({{< ref "tags" >}}) button at the bottom left, you can easily find content that aligns with your interests based on different topics.<br>
+I created this website to share what I love and what I have learned. You can explore the [projects]({{< ref "projects" >}}) to take a look at the data science-related projects I have done or am currently working on. You can also find some [summaries]({{< ref "posts" >}}) covering computer science topics, such as `machine learning`, `git`, `website building`, which I believe might be fun and useful. The [Tags]({{< ref "tags" >}}) button at the bottom left will help you find topics that aligns with your interests.<br>
 
 
 <!--
@@ -46,5 +44,5 @@ Kind
 {{< /typeit >}}
 -->
 {{< alert "envelope">}}
-Feel free to reach out to me via [email](mailto:Anhui_Gui@outlook.com). I would be very happy to know what is on your mind and exchange ideas with you! :D
+Please feel free to reach out to me via [email](mailto:Anhui_Gui@outlook.com). I would be very excited to know what is on your mind and exchange ideas with you! :D
 {{< /alert >}}

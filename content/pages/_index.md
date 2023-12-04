@@ -18,22 +18,18 @@ sharingLinks : false
 
 ---
 
-Hi!:waving_hand: My name is Anhui Gui. I am a recent graduate with a master's degree in Digital Business from the [University of Amsterdam](https://www.uva.nl/en).
+Hi!:waving_hand: My name is Anhui Gui. I am a recent graduate with a Master's degree in Digital Business from the [University of Amsterdam](https://www.uva.nl/en). Before this, I studied Computer Science, International Economics, and CPA in bacherlor's studies at [Jiangxi University of Finance and Economics](https://en.wikipedia.org/wiki/Jiangxi_University_of_Finance_and_Economics).
 
-Before this, I studied Computer Science, International Economics, and CPA during my bacherlor's studies.
+My research interest revolves around studying online information and user behaviour on social media. My goal is to promote the application of advanced machine learning techniques to gain a comprehensive understanding of the dynamics of user patterns and the underlying factors behind online data, with a focus on the mental health field. In my research, I integrate diverse perspectives from multiple disciplines, employing a range of machine learning algorithms and statistical methods to achieve a thorough comprehension of the subject matter.
 
-My research interest revolves around studying online information and user behaviour on social media. My goal is to promote the application of advanced machine learning techniques to gain a comprehensive understanding of the dynamics of user patterns and the underlying factors behind online data, with a focus on the mental health field.
-
-My research approach combines a range of expertise, incorporating various machine learning algorithms and statistical methods, and is enriched by multidisciplinary industry-specific insights to delve deep into the studies.
-
-<b>Some fun facts about me:</b>
+<b>Here are some fun facts about me in personal life:grinning_cat::</b>
 - Open-minded and always curious about new things
 - Enjoy haphazard journeys
+- Red panda lover
 - Coffee and bubble tea are my go-to drinks
 - Keen on reading and baking
 - An enthusiastic video gamer (Dota2)
-- Red Panda lover 
   
-I am really into programming, and I genuinely think that sharing what we know can make the development process much better. I also want to speed up this process. Therefore, I am working on making beginner-friendly programming tutorials based on what I know, and I try to share my code openly whenever I can.
+P.S. I am really into programming, and I believe that sharing knowledge can significantly accelerate the development process. Therefore, I am creating beginner-friendly tutorials with more details from a learner’s perspective. And I also try to openly share my code whenever possible.
 
 <!--galary-->
