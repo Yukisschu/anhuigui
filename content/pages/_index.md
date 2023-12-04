@@ -25,11 +25,23 @@ My research interest revolves around studying online information and user behavi
 <b>Here are some fun facts about me in personal life:grinning_cat::</b>
 - Open-minded and always curious about new things
 - Enjoy haphazard journeys
-- Red panda lover
+- Red pandas are too cute 
 - Coffee and bubble tea are my go-to drinks
 - Keen on reading and baking
 - An enthusiastic video gamer (Dota2)
   
 P.S. I am really into programming, and I believe that sharing knowledge can significantly accelerate the development process. Therefore, I am creating beginner-friendly tutorials with more details from a learner’s perspective. And I also try to openly share my code whenever possible.
 
-<!--galary-->
+
+{{< gallery >}}
+  <img src="gallery/10.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" />
+  <img src="gallery/02.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" />
+  <img src="gallery/05.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" />
+  <img src="gallery/06.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" />
+  <img src="gallery/08.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" /> 
+  <img src="gallery/01.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" />
+  <img src="gallery/03.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" />
+  <img src="gallery/07.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" />
+
+
+{{< /gallery >}}
