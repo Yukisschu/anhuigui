@@ -7,9 +7,9 @@ tags = [ 'git', 'summary']
 +++
 
 {{< lead >}}
-When I asked Juju "What are your favourite parts of programming?" **Git** was one of the answers I received. It is so **powerful** yet **concise** that leads me to write this blog. From here you can find the very plain explanations of Git jargon and the most commonly used commands. 
+When I asked Juju "What are your favourite parts of programming?" Git was one of the answers I received. It is so **powerful** yet **concise** that leads me to write this blog. From here you can find the very plain explanations of Git jargon and the most commonly used commands. 
 
-Most of the concepts come from [Learn Git Branching](https://learngitbranching.js.org/), which is also recommended by Juju. It is a very fun website that visualises Git operations and helps beginners understand Git in a highly interactive and effective way. Most importantly, it does not require an internet connection. It became my good pal during travels in Switzerland when I had no internet on the train! :P
+The main concepts come from [Learn Git Branching](https://learngitbranching.js.org/), which is also recommended by Juju. It is a very fun website that visualises Git operations and helps beginners understand Git in a highly interactive and effective way. Most importantly, it does not require an internet connection. It became my good pal during travels in Switzerland when I had no internet on the train! :P
 
 This blog will be regularly updated with fresh insights and newfound knowledge about Git. 
 {{< /lead >}}
@@ -65,8 +65,8 @@ Let's first look at what local Git can do. Without using the remote repository, 
 ### 2.1. Creating New Things: Commit and Branch 
 <u>***Concepts:***</u><br>
 **Commit**: Snapshots of the project.<br>
-**Stage**: a holding area, use **stage** to select the changes you want to commit (after making many changes to your current file, you might just want to commit some of them).<br>
-**Branch**: Pointers to a specific commit. "I want to include the work of this commit and all parent commits".<br>
+**Stage**: a holding area, use stage to select the changes you want to commit (after making many changes to your current file, you might just want to commit some of them).<br>
+**Branch**: Pointers to a specific commit, including the work of this commit and all parent commits.<br>
 
 
 <u>***Commands:***</u><br>
@@ -87,19 +87,18 @@ Let's first look at what local Git can do. Without using the remote repository, 
 {{< alert "bell" >}}
 In "detached HEAD" state, you are not on a branch but at a specific commit.
 {{< /alert >}}<br>
-`~<num>`: move the pointer from current location upwards a \<number> of times.<br>
-`git checkout main~2` : move upwards 2 commits (the grandparent of `main`).<br>
-`^`: move upwards 1 commit (find the parent of the specified commit).<br>
-`git checkout main^^` : move upwards 2 commits (the grandparent of `main`).<br>
+`~<num>`: move the pointer from current location upwards a \<number> of times<br>
+`git checkout main~2` : move upwards 2 commits (the grandparent of `main`)<br>
+`^`: move upwards 1 commit (find the parent of the specified commit)<br>
+`git checkout main^^` : move upwards 2 commits (the grandparent of `main`)<br>
 
 {{< alert "bell" >}}
 The `^` modifier also accepts an optional number after it, which specifies which parent reference to follow from a merge commit.
 {{< /alert >}}<br>
-`git checkout main^2`: checkout the second parent from a merged commit point<br>
-we can even chain them together `git checkout HEAD~^2~2`, but this will only move around `HEAD`, if we want to move branch around: `git branch bugFix main~^2~1`<br>
-`git log`: a history record, showing all the changes or commits made in your project (starting from the most recent to the earliest).<br>
+`git checkout main^2`: checkout the second parent from a merged commit point, we can even chain them together with `git checkout HEAD~^2~2`. But this will only move around `HEAD`, if we want to move branch around: `git branch bugFix main~^2~1`<br>
+`git log`: a history record, showing all the changes or commits made in your project (recent --> earliest)<br>
 
-### 2.3. Redesigning Branches: Merge, Squash, Rebase, ans Cherry-pick
+### 2.3. Redesigning Branches: Merge, Squash, Rebase, and Cherry-pick
 <u>***Concepts:***</u><br>
 **Merge**: Create a special commit that has two unique parents. "I want to include all the work from this parent over here and this one over here, *and* the set of all their parents".<br>
 **Squash**: Combine multiple commits into a single commit.<br>
@@ -115,7 +114,7 @@ we can even chain them together `git checkout HEAD~^2~2`, but this will only mov
 `git rebase main`: move the work from `bugFix`(checked out) directly onto the `main`<br>
 `git rebase main bugFix`: rebase `bugFix` onto `main`<br>
 {{< alert "bell" >}}
-Please pay attention to the difference between *merge* and *rebase*. Assume we are currently checked out on `main`:<br>
+Please pay attention to the difference between **merge** and **rebase**. Assume we are currently checked out on `main`:<br>
 `git merge A`: merge `A` to `main`<br>
 `git rebase A`: rebase `main` onto `A`
 {{< /alert >}}
@@ -132,12 +131,13 @@ Undo the previous steps on local or remote branch.
 `git reset HEAD~1`: reverses changes by moving a branch reference backwards in time to one older commit before HEAD.<br>
 `git revert HEAD`: reverse changes by creating a new commit that introduces changes that exactly reverse the commit.<br>
 {{< alert "bell" >}}
-The ways of undoing changes using *reset* and *revert* are different.<br>
+The ways of undoing changes using **reset** and **revert** are different.<br>
 By moving the branch pointer to the previous commit, *reset* rewrites the history.<br>
 While *revert* creates a new commit that undoes the changes introduced by a previous commit (safer for shared branches in team work).
 {{< /alert >}}<br>
 
-### 2.5. Git tags
+### 2.5. Marking Commits: Git Tags
+
 **Permanently** mark certain **commits** as "milestones" (major releases and big merges) that you can then reference like a branch. You can't commit directly onto the `v1` tag.
 
 `git tag v1 C1`: name the commit `C1` with the tag `v1` (if you leave the C1 off, git will just use whatever `HEAD` is at).<br>
@@ -152,21 +152,102 @@ The output of the command looks like: `<tag>_<numCommits>_g<hash>`, where `tag`
 
 For example, if your current commit is 3 commits away from the nearest tag named v1, and the hash of your current commit is abcdefg, the output might look like `v1_3_gabcdefg`.
 
+So far, we have covered the fundamental **local Git commands**. Take a moment to revisit the [Git elements relationship graph](git-relat.png), and you would likely gain a deeper understanding of these concepts.
+
+## 3. Basic Remote Git Commands
+In this section, our exploration of Git will broaden to include the remote aspect. Leveraging a remote repository in Git enhances the efficiency and collaborative experience of software development, particularly in team-based and distributed environments.<br>
+
+<u>***Concepts:***</u><br>
+**Remote repository**: Copies of your repository that is hosted on a server or another location, which allows commits to be transferred back and forth when multiple developers are working on a project togetehr.<br>
+**Remote branch**: A branch in our **local repository**. It is created to track the branch in the remote repository (aka. remote-tracking branch), helping understand the difference between local work and work on the remote. It is often named with a prefix indicating the name of the remote repository (`<remote name>/<branch name>`). For example, `origin/main` represents the `main` branch on the `origin` remote repository.
+
+{{< alert "bell" >}}
+`remote branch` is only for tracking purpose, we do not work on these branches directly. Instead, we can push the changes to the remote repository (after pulling changes from the remote repository, the remote branches will be updated automatically).
+{{< /alert >}}
+
+### 3.1. Iteracting between Local and Remote: Clone, Fetch, Pull, and Push
+
+#### 3.1.1 From Remote to Local
+`git clone`: create local copies of remote repository (from github for example)<br>
+`git fetch`: download the changes from a remote repository, but it **will not update** the branch you are currently working on. Specifically, it will:
+- downloads the commits that the remote has but are missing from our local repository
+- updates the remote branches (`origin/main`) to refelct the changes
+- you can inspect / merge them to your local branch manually with `git merge`, `git rebase`, etc.
+`git pull`: `fetch` remote changes and then `merge` them in one go.
+`git pull --rebase`: shorthand for a pull and a rebase. Fetching changes from a remote repository and rebasing local changes on top of the fetched changes to solve the problems of diverged history.
+
+#### 3.1.1 From Local to Remote
+`git push`: upload local changes to the remote repository.<br>
+
+The connection between `main` and `origin/main`:
+- Pull: commits are downloaded onto `origin/main` and then merged into the local `main` branch.
+- Push: work from the local `main` branch is pushed onto the remote's `main` branch, then represented by `origin/main` locally.
+
+{{< alert "bell" >}}
+When collaborating in a large team, remote `main` is always protected. We need to work on `side branches` (off of `main`), and then create pull request to merge the `side branches` onto `main`.
+{{< /alert >}}
+
+### 3.2. Enhanced Custom Interactions between Local and Remote
+
+By default, the source and destination for both local and remote operations are the same in Git. However, Git is highly flexible, allowing you to customize these arguments as needed.<br>
+
+#### 3.2.1. Customizing Upstream Branches 
+
+`git branch -u origin/main side`: set the `side` branch to track `origin/main`
+- If `side` is currently checked out: `git branch -u origin/main`
+  
+`git checkout -b side origin/main`: we can also start with creating a new branch named `side`, and then sets it to track `origin/main`
+
+#### 3.2.2. Customizing the Changes for Updates
+**Push**<br>
+`git push <remote> <place>`: git push can optionally take arguments, and it totally ignores where we are checked out.<br> 
+e.g: `git push origin main`: Go to the `main` branch in my repository, grab all the commits, and then go to the `main` branch on the `origin` remote repository. Place whatever commits are missing on that branch.<br>
+
+When the source and destination of the push are different:<br>
+`git push origin <source>:<destination>`: `source` is any location on local repository that git will understand. `destination` is the branch on the remote repository named origin, if the `<destination>` doesn't exist, git will create one first.<br>
+e.g: `git push origin side^:main`: Git resolves `side^` into the parent of the latest commit on the local `side` branch, uploads whatever commits that are not present yet on the remote `main`.
+
+**Fetch**<br>
+Similar to the command structure of `push`, the `fetch` command simply swaps the local and remote elements. Here are some examples:<br>
+`git fetch origin side`: instead of fetching all changes, this command downloads only the commits from the `side` branch on the remote repository and places them in `origin/side`. As always, it does not update the local `side` branch. <br>
+
+`git fetch origin side~1:main`: git resolves `side~1` into the parent of the latest commit on the remote `side` branch, and then downloaded those commits to local `main` branch. <br>
+
+**Pull**<br>
+`git pull`, as always, is the combination of `git fetch` and `git merge`. Here are some examples:<br>
+`git pull origin main`: it is equal to `git fetch origin main` + `git merge origin/main`. By specifying `main` we download commits onto `origin/main`. Then we merged `origin/main` to our **currently checked out location** (which may or may **not** be the local branch `main`). This allows you to efficiently update multiple branches in different locations with the same arguments. For instance, you might have a project structure where you are simultaneously working on feature branches in different directories. By running git pull origin main in each directory, you ensure that the main branch in each location is updated with the latest changes from the remote repository.
+
+`git pull origin side~1:main`: instead of fetch changes onto `origin/side`, it downloads 1 commit before `side` to `main` and merges `main` to current checkout point.
+
+That is all for this summary for now! :) Here's the [Git elements relationship graph](git-relat.png) once again. Does everything seem more clear now?
+
+Certainly, Git offers numerous other functions, and I will continue adding them as I discover valuable ones.
+
+## 4. Some Handy Tips
+
+You probably would not like to get a tangled spaghetti Git history like this, so here are some tips that might be helpful:
+<p align="center">  
+<em>Figure 4.1. Tangled Spaghetti</em>
+</p>
+
+![spaghetti](spaghetti.jpg)
+
+- Commit Frequently with descriptive commit messages;
+- Branch effectively and branch early;
+- Pull before Push;
+- Squash and rebase will make the Git graph less hairy;
+- Visualize Git activities (I am using [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) in VS Code).
+
+
+
 <!--
-# 4. Some suggestions
-
-I find that visualizing Git activities, either mentally or with tools, and even drawing them out on a page, can be the most effective approach.
-- Branch more and branch early;
-- Squash and rebase will make the Git graph less hairy
-
-
 This concept was inspired by a [post](https://datasci.social/@b0rk@jvns.ca/111375097434853441) by Julia Evans.
-
+-->
 <div style="display:flex; gap:6px">
 
 {{< badge >}} git {{< /badge >}}
 
 {{< badge >}} summary {{< /badge >}}
 </div>
--->
+
 [^1]: https://git-scm.com/
