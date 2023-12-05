@@ -232,7 +232,7 @@ You probably would not like to get a tangled spaghetti Git history like this, so
 
 ![spaghetti](spaghetti.jpg)
 
-- Commit Frequently with descriptive commit messages;
+- Commit frequently with descriptive commit messages;
 - Branch effectively and branch early;
 - Pull before Push;
 - Squash and rebase will make the Git graph less hairy;

@@ -7,11 +7,11 @@ tags = ['machine learning', 'artificial intelligence', 'summary']
 +++
 
 {{< lead >}}
-We are now in a rapidly evolving world filled with thrilling challenges and boundless opportunities. Each of us has the potential to be an observer, participant, or even a catalyst in this dynamic process. Therefore, I aim to write a summary to distill the machine learning knowledge acquired during my master's studies in Digital Business at the University of Amsterdam. The textbook we used is [Data Science for Business What You Need to Know about Data Mining and Data-Analytic Thinking](https://www.google.nl/books/edition/Data_Science_for_Business/EZAtAAAAQBAJ?hl=en&gbpv=0) by [Foster Provost](https://fosterprovost.com/) and [Tom Fawcett](https://www.researchgate.net/profile/Tom-Fawcett).
+We are now in a rapidly evolving world filled with thrilling challenges and boundless opportunities. Each of us has the potential to be an observer, participant, or even a catalyst in this dynamic process. Therefore, I am writing this summary to distill the machine learning knowledge acquired during my master's studies. The textbook we used is [Data Science for Business What You Need to Know about Data Mining and Data-Analytic Thinking](https://www.google.nl/books/edition/Data_Science_for_Business/EZAtAAAAQBAJ?hl=en&gbpv=0) by [Foster Provost](https://fosterprovost.com/) and [Tom Fawcett](https://www.researchgate.net/profile/Tom-Fawcett).
 
-With my understanding only touching the surface of the profound and ever-evolving field of machine learning, this summary only provides a concise overview without delving too deeply into the intricacies of algorithms. I aspire that through this summary, my grasp of the subject matter will be further solidified. It would also be immensely gratifying if the words penned here have the potential to resonate with those who chance upon this page.
+With my understanding only touching the surface of the profound and ever-evolving field of machine learning, this summary only provides a concise overview without delving too deeply into the intricacies of algorithms. I hope that through this summary, my understandings in this field will be further solidified. It would also be greatly gratifying if the words penned here have the potential to resonate with those who chance upon this page.
 
-If you notice any errors or want to have some further discussions with me, please feel free to drop me a message. 
+If you notice any errors or want to have some further discussions with me, please feel free to drop me a message :envelope:.
 
 Now, let's get started! 
 {{< /lead >}}
@@ -45,7 +45,7 @@ Nowadays, the phrases ***artificial intelligence (AI)***, ***machine learning (M
 
 The term ***machine learning*** was introduced by [Arthur Samuel](https://en.wikipedia.org/wiki/Arthur_Samuel_(computer_scientist)) in 1959. Positioned as a sub-discipline of artificial intelligence, machine learning concentrates on formulating and scrutinizing statistical algorithms adept at effective generalization. These algorithms can autonomously execute tasks without explicit instructions and refine their performance through self-learning over time [^1].
 
-Machine learning algorithms exhibit diverse characteristics, allowing for classification based on various criteria. A prevalent classification method involves categorizing them into ***supervised learning***, ***unsupervised learning***, and ***reinforcement learning***. In ***supervised learning***, datasets include labeled training data (e.g., yes or no), primarily utilized for predicting and classifying unseen data. Conversely, ***unsupervised learning*** algorithms uncover patterns in unlabeled data, often applied in clustering or dimensionality reduction.
+Machine learning algorithms exhibit diverse characteristics, allowing for classification based on various criteria. A prevalent classification method involves categorizing them into ***supervised learning***, ***unsupervised learning***, and ***reinforcement learning***. In ***supervised learning***, datasets include labeled training data (e.g., yes or no), primarily utilised for predicting and classifying unseen data. Conversely, ***unsupervised learning*** algorithms uncover patterns in unlabeled data, often applied in clustering or dimensionality reduction.
 
 Additionally, the distinction between ***deep learning*** and ***classical (or "non-deep") machine learning*** depends on the learning approach employed. ***Deep learning*** processes raw, unstructured data (e.g., text or images), autonomously discerning features that differentiate data categories. On the other hand, ***classical machine learning*** relies more on human intervention for learning [^2].
 <!--
@@ -62,9 +62,9 @@ Additionally, the distinction between ***deep learning*** and ***classical (or "
 [Figure 1.](aiml.png) illustrates the intricate interplay among the aforementioned terms and this summary will emphasize the supervised and unsupervised learning within the broader landscape of classical machine learning.
 
 ## 2. Delving into Unsupervised Machine Learning
-***Unsupervised learning*** operates without a predefined objective or target. Tasks such as***clustering***,***co-occurrence grouping***, and***profiling*** typically fall under the realm of unsupervised learning. Since the outcomes of unsupervised learning may lack immediate clarity or apparent significance, it would require creativity and business acumen for interpretation.
+***Unsupervised learning*** operates without a predefined objective or target. Tasks such as ***clustering***, ***co-occurrence grouping***, and ***profiling*** typically fall under the realm of unsupervised learning. Since the outcomes of unsupervised learning may lack immediate clarity or apparent significance, it would require creativity and business acumen for interpretation.
 
-In the following section, I will delve into the concept of ***similarity***, a fundamental principle that underpins one of the most prevalent techniques in unsupervised data mining: clustering. Subsequently, I will illustrate ***K-means***, a representative algorithm that employs this method.
+In the following section, I will delve into the concept of ***similarity***, a fundamental principle that underpins one of the most prevalent techniques in unsupervised data mining: clustering. Subsequently, I will further illustrate ***K-means***, a representative algorithm that employs this method.
 
 ### 2.1. Clustering and Similarity 
 
@@ -271,15 +271,18 @@ Where:
 ## 4. Machine Learning Using Cases
 
 ## 4.1. Cross-industry Standard Process for Data Mining Model
-To build machine learning models into real-world usage, a widely adopted framework that guides the entire data mining process is Cross-Industry Standard Process for Data Mining (CRISP-DM) methodology. Comprising six phases, CRISP-DM begins with understanding the business objectives and data, followed by data preparation, modeling, evaluation, and deployment. The iterative nature of CRISP-DM allows for revisiting and refining each phase, ensuring alignment with business goals. From defining project objectives and exploring datasets to deploying models into operational processes, CRISP-DM promotes a structured and collaborative approach, making it adaptable to various industries and providing a robust foundation for successful data mining projects[^9].
+To build machine learning models into real-world usage, a widely adopted framework for data mining process is Cross-Industry Standard Process for Data Mining (CRISP-DM) methodology. Comprising six phases in total, CRISP-DM begins with understanding the business objectives and data, followed by data preparation, modeling, evaluation, and deployment. The iterative nature of CRISP-DM allows for revisiting and refining each phase, ensuring alignment with business goals. From defining project objectives and exploring datasets to deploying and refining models into operational processes, CRISP-DM promotes a structured and collaborative approach, making it adaptable to various industries and providing a robust foundation for successful data mining projects[^9].
 <p align="center">  
 <em>Figure 4. Cross-industry Standard Process for Data Mining</em>
 </p>
 
 ![CRISP-DM.png](CRISP-DM3.png)
+
+This concludes the summary. To enhance your understanding, it is recommended to apply these models in real-world scenarios through exercises. Common machine learning projects, such as customer segmentation, housing price prediction, sentiment analysis, etc., offer valuable hands-on experience. For additional machine learning-related projects, please refer to the [Projects](https://anhui-gui.com/projects/) page.
+<!--
 ## 4.2. Using Supervised Machine Learning Algorithms for Housing Prediction
 This section showcases the application of supervised machine learning algorithms for housing prediction, a real-world scenario, to make the above theories more vivid and tangible. Leveraging advanced computational techniques, supervised learning methods harness labeled datasets to train models capable of making predictions and uncovering patterns within housing-related data. From predicting property prices to assessing market trends and optimizing decision-making processes, these algorithms offer valuable insights into the dynamic and multifaceted realm of real estate. The linked article explores the methodologies, considerations, and key principles underpinning the implementation of supervised learning in the context of housing prediction, aiming to provide a comprehensive understanding of how these powerful tools contribute to data-driven analyses and informed decision-making within the housing domain.
-
+-->
 {{< article link="/posts/thesis/" >}}
 
 <div style="display:flex; gap:6px">
