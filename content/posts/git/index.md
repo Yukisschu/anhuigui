@@ -171,7 +171,7 @@ In this section, our exploration of Git will broaden to include the remote aspec
 `git clone`: create local copies of remote repository (from github for example)<br>
 `git fetch`: download the changes from a remote repository, but it **will not update** the branch you are currently working on. Specifically, it will:
 - downloads the commits that the remote has but are missing from our local repository
-- updates the remote branches (`origin/main`) to refelct the changes
+- updates the remote branches (`origin/main`) to reflect the changes
 - you can inspect / merge them to your local branch manually with `git merge`, `git rebase`, etc.
 `git pull`: `fetch` remote changes and then `merge` them in one go.
 `git pull --rebase`: shorthand for a pull and a rebase. Fetching changes from a remote repository and rebasing local changes on top of the fetched changes to solve the problems of diverged history.
@@ -225,13 +225,14 @@ Certainly, Git offers numerous other functions, and I will continue adding them 
 
 ## 4. Some Handy Tips
 
-You probably would not like to get a tangled spaghetti Git history like this, so here are some tips that might be helpful:
+You probably would not like to get a tangled spaghetti Git history like this.
 <p align="center">  
 <em>Figure 4.1. Tangled Spaghetti</em>
 </p>
 
 ![spaghetti](spaghetti.jpg)
 
+So here are some tips that might be helpful:
 - Commit frequently with descriptive commit messages;
 - Branch effectively and branch early;
 - Pull before Push;
