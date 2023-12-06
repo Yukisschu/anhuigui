@@ -8,7 +8,7 @@ Hi! Welcome to my website!
 {{< /lead >}}
 I am Anhui, I obtained my Master's degree in Business Administration: Digital Business (with distinction) from the [University of Amsterdam](https://www.uva.nl/). My primary research interest lies in utilising machine learning techniques to reveal inherent patterns and gain insights from online data, with a specific focus on the downstream application in suicide prevention.<br>
 
-I created this website to share what I love and what I have learned. You can explore the [projects]({{< ref "projects" >}}) to take a look at the data science-related projects I have done or am currently working on. You can also find some [summaries]({{< ref "posts" >}}) covering computer science topics, such as `machine learning`, `git`, `website building`, which I believe might be fun and useful. The [Tags]({{< ref "tags" >}}) button at the bottom left will help you find topics that aligns with your interests.<br>
+I created this website to share what I love and what I have learned. You can explore the [projects]({{< ref "projects" >}}) to take a look at the data science-related projects I have done or am currently working on. You can also find some [summaries]({{< ref "posts" >}}) covering computer science topics, such as `machine learning`, `git`, `website building`, which I believe might be fun and useful. The [Tags]({{< ref "tags" >}}) button at the bottom left will help you find topics that align with your interests.<br>
 
 
 <!--
