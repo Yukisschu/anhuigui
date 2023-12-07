@@ -218,7 +218,4 @@ After interactive fine-tuning processes, the recall values have exhibited a noti
 {{< badge >}} project {{< /badge >}}
 </div>
 
-for Fine-Tuning SuiBERT {#3.2.}
-
-
 [^1]: Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.

@@ -237,13 +237,9 @@ So here are some tips that might be helpful:
 - Branch effectively and branch early;
 - Pull before Push;
 - Squash and rebase will make the Git graph less hairy;
-- Visualize Git activities (I am using [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) in VS Code).
+- Visualise Git activities (I am using [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) in VS Code).
 
 
-
-<!--
-This concept was inspired by a [post](https://datasci.social/@b0rk@jvns.ca/111375097434853441) by Julia Evans.
--->
 <div style="display:flex; gap:6px">
 
 {{< badge >}} git {{< /badge >}}
