@@ -4,6 +4,7 @@ date = 2023-11-23T17:36:18+01:00
 draft = false
 slug = 'git-commands' 
 tags = [ 'git', 'summary']
+series_order = 2
 +++
 
 {{< lead >}}

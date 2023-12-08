@@ -4,6 +4,7 @@ date = 2023-11-18T17:36:18+01:00
 draft = false
 slug = 'machine-learning'
 tags = ['machine learning', 'artificial intelligence', 'summary']
+series_order = 1
 +++
 
 {{< lead >}}
