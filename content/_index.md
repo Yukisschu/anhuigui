@@ -17,7 +17,7 @@ I created this website to share what I love and what I have learned. You can exp
     {{< icon "envelope" >}}
   </span>
   <span class="flex items-center justify-between grow dark:text-neutral-300">
-    <span class="prose dark:prose-invert">Feel free to reach out to me via <code id="layout">email</code> . I would be very excited to know what is on your mind and exchange ideas with you! :D </code> </span>
+    <span class="prose dark:prose-invert"> What's on your mind? Let's exchange ideas!  :) </code> </span>
     <button
       onclick="window.location.href='mailto:Anhui_Gui@outlook.com';"
       target="blank" 
