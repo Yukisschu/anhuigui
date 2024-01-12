@@ -10,7 +10,7 @@ series_order = 1
 {{< lead >}}
 We are now in a rapidly evolving world filled with thrilling challenges and boundless opportunities. Each of us has the potential to be an observer, participant, or even a catalyst in this dynamic process. Therefore, I am writing this summary to distill the machine learning knowledge acquired during my master's studies. The textbook we used is [Data Science for Business What You Need to Know about Data Mining and Data-Analytic Thinking](https://www.google.nl/books/edition/Data_Science_for_Business/EZAtAAAAQBAJ?hl=en&gbpv=0) by [Foster Provost](https://fosterprovost.com/) and [Tom Fawcett](https://www.researchgate.net/profile/Tom-Fawcett).
 
-With my understanding only touching the surface of the profound and ever-evolving field of machine learning, this summary only provides a concise overview without delving too deeply into the intricacies of algorithms. I hope that through this summary, my understandings in this field will be further solidified. It would also be greatly gratifying if the words penned here have the potential to resonate with those who chance upon this page.
+I hope that through this summary, my understandings in this field will be further solidified. It would also be greatly gratifying if the words penned here have the potential to resonate with those who chance upon this page.
 
 If you notice any errors or want to have some further discussions with me, please feel free to drop me a message :envelope:.
 
