@@ -1,5 +1,5 @@
 +++
-title = 'Basic Git Jargon and Commands'
+title = 'Common Git Jargon and Commands'
 date = 2023-11-23T17:36:18+01:00
 draft = false
 slug = 'git-commands' 
@@ -11,8 +11,6 @@ series_order = 2
 When I asked Juju "What are your favourite parts of programming?" Git was one of the answers I received. It is so **powerful** yet **concise** that it leads me to write this blog. From here you can find the very plain explanations of Git jargon and the most commonly used commands. 
 
 The main concepts come from [Learn Git Branching](https://learngitbranching.js.org/), which is also recommended by Juju. It is a very fun website that visualises Git operations and helps beginners understand Git in a highly interactive and effective way. Most importantly, it does not require an internet connection. It became my good pal during travels in Switzerland when I had no internet on the train! :P
-
-This blog will be regularly updated with fresh insights and newfound knowledge about Git. 
 {{< /lead >}}
 
 ## 1. What is Git

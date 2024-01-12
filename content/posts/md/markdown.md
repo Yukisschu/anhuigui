@@ -1,20 +1,23 @@
 +++
-title = 'Learn Basic Markdown'
+title = 'Markdown, HTML, CSS, and JavaScript: Good Pals for Creating Your Own Digital Domain'
 date = 2023-12-07T17:36:18+01:00
 draft = false
 slug = 'markdown'
-tags = ['WIP', 'draft', 'markdown', 'website building', 'summary']
+tags = ['WIP', 'draft', 'markdown', 'html', 'css', 'javascript', 'web development', 'summary']
 series_order = 3
 +++
 
 
 {{< lead >}}
-Markdown is super flexible that comes in handy for many using cases. You can pick up the basics really soon and start creating your first web page.
+Exploring this thrilling digital era, I have witnessed numerous elements in our surroundings that have transitioned into the digital world with wider accessibility and enhanced vibrancy. In this context, how about digitizing our ideas? Standing on the shoulders of giants, it is actually quite straightforward.
+
+The powerful tools created by pioneers empower endless possibilities. Individuals equipped with these tools can construct incredible artefacts. The aim of this post is to distil the feasible essence within them, which is also instrumental in bringing our ideas to this magical digital world.
 {{< /lead >}}
 
+### 1. Markdown
 Markdown is a lightweight markup language for creating formatted text using a plain-text editor [^1]. Here's the [official website](https://daringfireball.net/projects/markdown/syntax) that covers the comprehensive syntax. In this summary, I picked the commonly used ones that could serve as a good starting point.
 
-## 1. Font Formats
+### 1.1. Font Formats
 
 ``` 
 # heading 1
@@ -45,7 +48,7 @@ Markdown is a lightweight markup language for creating formatted text using a pl
 `mark`
 {{< /alert >}}
 
-## 2. Lists
+### 1.2. Lists
 
 **Unordered List**
 ```
@@ -93,7 +96,7 @@ Markdown is a lightweight markup language for creating formatted text using a pl
 3. content
 {{< /alert >}}
 
-## 3. Insert New Content <br>
+### 1.3. Insert New Content <br>
 ```
 [website](https://anhui-gui.com/)
 
