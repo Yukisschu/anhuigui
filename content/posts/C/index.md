@@ -8,10 +8,10 @@ series_order = 2
 +++
 
 {{< lead >}}
-The adjacency matrix is a square matrix used to represent a finite graph in graph theory. However, it can be space-consuming for sparse graphs. This article incorporates bitwise operations into the application of the adjacency matrix in the Tideman voting algorithm and achieves O(n) and Ω(1) for finding the winners. Importantly, it also condenses the processes of locking pairs and finding winners into a concise 10 lines of code while optimising memory usage by {{< katex >}}\\(\(\frac{n-1}{n}\)\\).
+The adjacency matrix is a square matrix used to represent a finite graph in graph theory. However, it can be space-consuming for sparse graphs. This article incorporates bitwise operations into the application of the adjacency matrix in the Tideman voting algorithm and achieves O(n) and Ω(1) for finding the winners. Importantly, it also condenses the processes of locking pairs and finding winners into a concise 10 lines of code while optimising memory usage to only {{< katex >}}\\(\(\frac{4}{n}\)\\) of the adjacency matrix.
 {{< /lead >}}
 
-This article will first introduce the background of the **Tideman algorithm** to enable readers who are not yet familiar with this method to build a comprehensive understanding. Subsequently, it will demonstrate all the main functions of this algorithm. If you are already comfortable with these concepts, feel free to jump to the [core discussion part](#chapter-2-4) directly.
+This article will first introduce the background of the **Tideman algorithm** to enable readers who are not yet familiar with this method to build a comprehensive understanding of the context. Subsequently, it will demonstrate all the main functions of this algorithm. If you are already comfortable with the prerequisite concepts of Tideman, please feel free to jump to the [core discussion part](#chapter-2-4) directly.
 
 
 ## 1. Background of the Tideman Electoral System
@@ -179,9 +179,9 @@ void sort_pairs(void)
 ```
   
 ### 2.4. Lock Pairs {#chapter-2-4}
-The `lock_pairs` function would create the locked graph, adding all pairs in decreasing order of victory strength so long as the edge would not create a cycle.
+The `lock_pairs` function creates the locked graph by adding all pairs in decreasing order of victory strength while ensuring that each edge does not create a cycle. In this section, three methods are discussed for implementing the `lock_pairs` function. 
 
-This is the most fun part of this algorithm! Initially, I employed a very cumbersome method, involving numerous embedded loops. After exploring together with Juju, we adopted the bitwise operation method and successfully locked pairs without creating a cycle and find the winner with 10 lines of code in total and achieved O(n) and Ω(1), while also optimising memory usage by {{< katex >}}\\(\(\frac{n-1}{n}\)\\) comparing to the adjacency matrix method.
+This is the most fun part of this algorithm! Initially, I employed a very cumbersome method involving numerous embedded loops. After exploring together with Juju, we adopted the bitwise operation method and successfully locked pairs without creating a cycle and find the winner with 10 lines of code in total and achieved O(n) and Ω(1), while also optimising memory usage by {{< katex >}}\\(\(\frac{n-4}{n}\)\\) comparing to the adjacency matrix method.
 
 
 #### 2.4.1. Adjacency List Method 
@@ -274,7 +274,7 @@ void lock_pairs(void)
 ```
 
 #### 2.4.2. Adjacency Matrix Method
-The adjacency matrix is a [square matrix](https://en.wikipedia.org/wiki/Square_matrix "Square matrix") used to represent a finite [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics) "Graph (discrete mathematics)"). The elements of the [matrix](https://en.wikipedia.org/wiki/Matrix_(mathematics) "Matrix (mathematics)") are boolean variables indicating whether pairs of [vertices](https://en.wikipedia.org/wiki/Vertex_(graph_theory) "Vertex (graph theory)") are [adjacent](https://en.wikipedia.org/wiki/Neighbourhood_(graph_theory) "Neighbourhood (graph theory)") in the graph [^4]. This concise representation allows the adjacency matrix to portray the graph straightforwardly. However, for a sparse graph, adjacency lists may require less space since they do not allocate any space to represent nonexistent edges.
+The adjacency matrix is a [square matrix](https://en.wikipedia.org/wiki/Square_matrix "Square matrix") used to represent a finite [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics) "Graph (discrete mathematics)"). The elements of the [matrix](https://en.wikipedia.org/wiki/Matrix_(mathematics) "Matrix (mathematics)") are boolean variables indicating whether pairs of [vertices](https://en.wikipedia.org/wiki/Vertex_(graph_theory) "Vertex (graph theory)") are [adjacent](https://en.wikipedia.org/wiki/Neighbourhood_(graph_theory) "Neighbourhood (graph theory)") in the graph [^4]. This concise representation allows the adjacency matrix to portray the graph straightforwardly. However, for a sparse graph, an adjacency matrix may require more space compared to an adjacency list since it also allocates space to nonexistent edges.
 
 The concept of building the Tideman algorithm using the adjacency matrix is similar to that of the adjacency list: lock every new pair that will not create a cycle in `locked`, and then connect all the links for the newly added pair in an adjacency matrix. 
 <p align="center">
@@ -293,15 +293,6 @@ The skeleton of implementing the Tideman algorithm using the adjacency list conc
 ```c
 void lock_pairs(void)
 {
-    bool NEW[candidate_count][candidate_count];
-
-    for (int m = 0; m < candidate_count; m++)
-    {
-        for (int n = 0; n < candidate_count; n++)
-        {
-            NEW[m][n] = false;
-        }
-    }
     bool NEW[MAX][MAX] = {{}};
 
     for (int i = 0; i < pair_count; i++)
@@ -320,7 +311,7 @@ void lock_pairs(void)
 ```
 
 #### 2.4.3. Bitwise Operation Method
-Although the adjacency matrix is very straightforward, a concern arises when applying it to a graph with sparse connections, resulting in a matrix predominantly filled with `0` and a scarcity of `1`. To optimise memory usage and reduce the average running time that the algorithm takes to find the winner, bitwise operations are incorporated in this section.
+Although the adjacency matrix is very straightforward, a concern arises when applying it to a graph with sparse connections, resulting in a matrix predominantly filled with `0` and a scarcity of `1`. To optimise memory usage and reduce the average running time that the algorithm takes to find the winners, bitwise operations are incorporated in this section.
 
 A **bitwise operation** operates on a [bit string](https://en.wikipedia.org/wiki/Bit_string "Bit string"), a [bit array](https://en.wikipedia.org/wiki/Bit_array "Bit array") or a [binary numeral](https://en.wikipedia.org/wiki/Binary_numeral_system "Binary numeral system") (considered as a bit string) at the level of its individual [bits](https://en.wikipedia.org/wiki/Bit "Bit") [^5]. Bitwise operations commonly use less power because of the reduced use of resources [^6]. Here is the list of all the bitwise operators with examples.
 - `&`  **Bitwise AND**: Conduct AND on every bit of two numbers.<br>
@@ -337,6 +328,10 @@ A **bitwise operation** operates on a [bit string](https://en.wikipedia.org/w
     `int result = 20 >> 3; // 10100 >> 10`
 
 In the context of tideman, pair `{pair[i].winner,pair[i].loser}` will represent as winner<sup>th</sup> bit in the binary format of `NEW[pair[i].loser]`. We can use `1 << n` to represent n<sup>th</sup> bit of `NEW[i]` (e.g.: `1 << 2` = `100`, which sets the 2<sup>th</sup> bit to 1). We can use `&` to check if n<sup>th</sup> bit is `0` or `1` and use `|` to set n<sup>th</sup> bit to `1`.
+
+<p align="center">
+<em>Figure 5. Bitwise Operations with Examples</em>
+</p>
 
 <img src="bitwise-operation.png" alt="bitwise-operation" style="display: block; margin: auto;">
 <br>
@@ -389,7 +384,7 @@ void print_winner(void)
 ```
 
 #### 2.5.1. Find the Winner Using Bitwise Operation
-For the bitwise operation method, `print_winner` just needs to simply find the all the `0`s in the array `NEW`.
+For the bitwise operation method, `print_winner` just needs to simply find all the `0`s in the array `NEW`.
 ```c
 void print_winner(void)
 {
@@ -403,7 +398,7 @@ void print_winner(void)
 }
 ```
 
-Combing the `lock_pairs` and `print_winner` together, here is all we need using the bitwise operations to find the winners.
+Combining the `lock_pairs` and `print_winner` together, here is all we need using the bitwise operations to find the winners.
 
 ```c
 void find_winners(void)
@@ -430,7 +425,7 @@ void find_winners(void)
 
 ```
 
-I hope this is enjoyable and helpful. A big thanks to Juju for making the exploration journey so much fun, and CS50 staff for bringing us such an amazing [exercise](https://cs50.harvard.edu/x/2020/psets/3/tideman/)!
+I hope this article is enjoyable and helpful. Also, a big thanks to Juju for making the exploration journey so much fun, and CS50 staff for bringing us such an amazing [exercise](https://cs50.harvard.edu/x/2020/psets/3/tideman/)!
 
 <div style="display:flex; gap:6px">
 {{< badge >}} tideman {{< /badge >}}
