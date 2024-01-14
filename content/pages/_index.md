@@ -18,19 +18,19 @@ sharingLinks : false
 
 ---
 
-Hi!:waving_hand: My name is Anhui Gui. I graduated with a Master's degree in Digital Business from the [University of Amsterdam](https://www.uva.nl/en). Previously, I studied Computer Science (for 1 year), International Economics, and CPA in bachelor's studies at [Jiangxi University of Finance and Economics](https://en.wikipedia.org/wiki/Jiangxi_University_of_Finance_and_Economics).
+Hi!:waving_hand: My name is Anhui Gui. I graduated with a Master's degree in Business Administration: Digital Business from the [University of Amsterdam](https://www.uva.nl/en). Previously, I studied Computer Science: Financial Big Data Analysis (for 1 year), International Economics and Trade, and Accounting: CPA in bachelor's studies at [Jiangxi University of Finance and Economics](https://en.wikipedia.org/wiki/Jiangxi_University_of_Finance_and_Economics).
 
-My research interest revolves around studying online information and user behaviour on social media. My goal is to promote the application of advanced machine learning techniques to gain a comprehensive understanding of the dynamics of user patterns and the underlying factors behind online data, with a focus on the mental health field. In my research, I integrate diverse perspectives from various disciplines and use machine learning models and statistical methods for a comprehensive understanding of the subject.
+My research focuses on advancing the application of state-of-the-art machine learning techniques to comprehensively understand dynamic user patterns and the underlying factors in online data from digital platforms. In my research, I integrate expertise and knowledge from data science, business, and social science and utilise various NLP/LLMs and statistical methods to gain a thorough understanding of the subject.
 
-<b>Here are some fun facts about me in my personal life:grinning_cat::</b>
+<b>Here are some fun facts about me in my daily life :grinning_cat::</b>
 - Open-minded and always curious about new things
-- Enjoy haphazard journeys
+- Enjoy nature and haphazard journeys
 - Red pandas are too cute 
 - Coffee and bubble tea are my go-to drinks
 - Keen on reading and baking
 - An enthusiastic video gamer (Dota2)
   
-P.S. I am really into programming, and I believe that sharing knowledge would greatly accelerate the development process. Therefore, I am writing beginner-friendly tutorials with more details from a learner’s perspective. And I also try to openly share my code whenever possible.
+Also, I am really into programming, and I believe that sharing knowledge would greatly accelerate the development process. Therefore, I am writing beginner-friendly tutorials with more details from a learner’s perspective, and I also try to openly share my code whenever possible.
 
 
 {{< gallery >}}
@@ -42,6 +42,5 @@ P.S. I am really into programming, and I believe that sharing knowledge would gr
   <img src="gallery/01.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" />
   <img src="gallery/03.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" />
   <img src="gallery/07.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" />
-
 
 {{< /gallery >}}
