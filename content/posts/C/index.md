@@ -107,16 +107,10 @@ void record_preferences(int ranks[])
     {
         for (int j = i + 1; j < candidate_count; j++)
         {
-            if (sizeof(preferences[ranks[i]][ranks[j]]) / sizeof(int) == 0)
-            {
-                preferences[ranks[i]][ranks[j]] = 1;
-            }
-            else
-            {
                 preferences[ranks[i]][ranks[j]]++;
-            }
         }
     }
+    return;
 }
 ```
 
@@ -152,29 +146,19 @@ The `sort_pairs` function sorts the pairs of candidates in `pairs` in decreasing
 ```c
 void sort_pairs(void)
 {
-    for (int i = 0; i < pair_count; i++)
+    for (int i = 0; i < pair_count - 1; i++)
     {
-        int max = 0;
-        for (int j = i; j < pair_count; j++)
+        for (int j = 0; j <= i - 1; j++)
         {
-            if (count[j] >= max)
+            if ((preferences[pairs[j].winner][pairs[j].loser]) < (preferences[pairs[j + 1].winner][pairs[j + 1].loser]))
             {
-                max = count[j];
-            }
-        }
-        for (int m = i; m < pair_count; m++)
-        {
-            if (count[m] == max)
-            {
-                int temp_winner = pairs[i].winner;
-                int temp_loser = pairs[i].loser;
-                pairs[i].winner = pairs[m].winner;
-                pairs[i].loser = pairs[m].loser;
-                pairs[m].winner = temp_winner;
-                pairs[m].loser = temp_loser;
+                pair temp = pairs[j];
+                pairs[j] = pairs[j + i];
+                pairs[j + 1] = temp;
             }
         }
     }
+    return;
 }
 ```
   
