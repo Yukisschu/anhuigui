@@ -1,7 +1,7 @@
 +++
 title = 'Markdown, HTML, CSS, and JavaScript: Good Pals for Creating Your Own Digital Domain'
 date = 2023-12-07T17:36:18+01:00
-draft = false
+draft = true
 slug = 'markdown'
 tags = ['WIP', 'draft', 'markdown', 'html', 'css', 'javascript', 'web development', 'summary']
 series_order = 3
