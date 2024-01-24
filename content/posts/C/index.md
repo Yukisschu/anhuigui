@@ -1,5 +1,5 @@
 +++
-title = 'Optimise Tideman Algorithm Using Bitwise Operations'
+title = 'Optimise Adjacency Matrix Using Bitwise Operations in Tideman Algorithm'
 date = 2024-01-09T17:36:18+01:00
 draft = false
 slug = 'bitwise-operators' 
@@ -8,10 +8,10 @@ series_order = 2
 +++
 
 {{< lead >}}
-The adjacency matrix is a square matrix used to represent a finite graph in graph theory. However, it can be space-consuming for sparse graphs. This article incorporates bitwise operations into the application of the adjacency matrix in the Tideman voting algorithm and achieves O(n) and Ω(1) for finding the winners. Importantly, it also condenses the processes of locking pairs and finding winners into a concise 10 lines of code while optimising memory usage to only {{< katex >}}\\(\(\frac{4}{n}\)\\) of the adjacency matrix.
+The adjacency matrix is a square matrix used to represent a finite graph in graph theory. However, it can be space-consuming for sparse graphs. This article incorporates bitwise operations into the application of the adjacency matrix in the Tideman voting algorithm and achieves O(n) and Ω(1) for finding the winners. Importantly, it also condenses the processes of locking pairs and finding winners while optimising memory usage to only {{< katex >}}\\(\(\frac{4}{n}\)\\) of the adjacency matrix.
 {{< /lead >}}
 
-This article will first introduce the background of the **Tideman algorithm** to enable readers who are not yet familiar with this method to build a comprehensive understanding of the context. Subsequently, it will demonstrate all the main functions of this algorithm. If you are already comfortable with the prerequisite concepts of Tideman, please feel free to jump to the [core discussion part](#chapter-2-4) directly.
+This article will first introduce the background of the **Tideman algorithm** to enable readers who are not yet familiar with this method to build a comprehensive understanding of the context. Subsequently, it will demonstrate all the main functions of this algorithm. If you are already comfortable with the prerequisite concepts of Tideman, please feel free to jump to the [core discussion part](#chapter-2-4) directly. 
 
 
 ## 1. Background of the Tideman Electoral System
@@ -165,7 +165,7 @@ void sort_pairs(void)
 ### 2.4. Lock Pairs {#chapter-2-4}
 The `lock_pairs` function creates the locked graph by adding all pairs in decreasing order of victory strength while ensuring that each edge does not create a cycle. In this section, three methods are discussed for implementing the `lock_pairs` function. 
 
-This is the most fun part of this algorithm! Initially, I employed a very cumbersome method involving numerous embedded loops. After exploring together with Juju, we adopted the bitwise operation method and successfully locked pairs without creating a cycle and find the winner with 10 lines of code in total and achieved O(n) and Ω(1), while also optimising memory usage by {{< katex >}}\\(\(\frac{n-4}{n}\)\\) comparing to the adjacency matrix method.
+This is the most fun part of this algorithm! After exploring together with Juju, we managed to use the bitwise operation method to avoid numerous embedded loops and successfully locked pairs without creating a cycle and find the winner with 10 lines of code in total and achieved O(n) and Ω(1), while also optimising memory usage by {{< katex >}}\\(\(\frac{n-4}{n}\)\\) comparing to the adjacency matrix method.
 
 
 #### 2.4.1. Adjacency List Method 
@@ -196,11 +196,12 @@ The skeleton of implementing the Tideman algorithm using the adjacency list conc
    - Check if the new pair will create a cycle with existing connections in `NEW`. If not:
        - Lock the new pair in `locked` and add this pair in `NEW`.
        - For each newly added pair, update all the connections in `NEW`. To build the connection, simply check if the winner of the new pair ever appeared as the loser in the previous pair, and update the new connections by adding them to the list `NEW`.
-
+<!--
 {{< alert "bell" >}}
 When creating new connections (links), make sure to skip duplicated pairs to prevent exceeding the size of the array.
 {{< /alert >}}
-
+-->
+<!--
 ```c
 void lock_pairs(void)
 {
@@ -256,6 +257,7 @@ void lock_pairs(void)
     }
 }
 ```
+-->
 
 #### 2.4.2. Adjacency Matrix Method
 The adjacency matrix is a [square matrix](https://en.wikipedia.org/wiki/Square_matrix "Square matrix") used to represent a finite [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics) "Graph (discrete mathematics)"). The elements of the [matrix](https://en.wikipedia.org/wiki/Matrix_(mathematics) "Matrix (mathematics)") are boolean variables indicating whether pairs of [vertices](https://en.wikipedia.org/wiki/Vertex_(graph_theory) "Vertex (graph theory)") are [adjacent](https://en.wikipedia.org/wiki/Neighbourhood_(graph_theory) "Neighbourhood (graph theory)") in the graph [^4]. This concise representation allows the adjacency matrix to portray the graph straightforwardly. However, for a sparse graph, an adjacency matrix may require more space compared to an adjacency list since it also allocates space to nonexistent edges.
@@ -409,7 +411,7 @@ void find_winners(void)
 
 ```
 
-I hope this article is enjoyable and helpful. Also, a big thanks to Juju for making the exploration journey so much fun, and CS50 staff for bringing us such an amazing [exercise](https://cs50.harvard.edu/x/2020/psets/3/tideman/)!
+This article discussed how to combine graph theory and bitwise operation in Tideman algorithm in an interesting way, which is just one of many ways to implement the Tideman algorithm, yet I hope it is straightforward, entertaining, and helpful. Also, a big thanks to Juju for making the exploration journey so much fun, and CS50 staff for bringing us such an amazing [exercise](https://cs50.harvard.edu/x/2020/psets/3/tideman/)!
 
 <div style="display:flex; gap:6px">
 {{< badge >}} tideman {{< /badge >}}

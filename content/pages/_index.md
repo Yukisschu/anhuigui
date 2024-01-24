@@ -27,10 +27,10 @@ My research focuses on advancing the application of state-of-the-art machine lea
 - Enjoy nature and haphazard journeys
 - Red pandas are too cute 
 - Coffee and bubble tea are my go-to drinks
-- Keen on reading and baking
+- Keen on baking
 - An enthusiastic video gamer (Dota2)
   
-Also, I am really into programming, and I believe that sharing knowledge would greatly accelerate the development process. Therefore, I am writing beginner-friendly tutorials with more details from a learner’s perspective, and I also try to openly share my code whenever possible.
+I really love programming, and I believe that sharing knowledge would greatly accelerate the development process. Therefore, I am writing beginner-friendly tutorials with more details from a learner’s perspective, and I also try to openly share my code whenever possible.
 
 
 {{< gallery >}}
@@ -44,3 +44,5 @@ Also, I am really into programming, and I believe that sharing knowledge would g
   <img src="gallery/07.jpg" class="grid-w50 md:grid-w33 xl:grid-w25" />
 
 {{< /gallery >}}
+
+
