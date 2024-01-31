@@ -69,7 +69,7 @@ smartTOCHideUnfocusedChildren = false
   showSummary = false
   showTableOfContents = true
   showCards = true
-  groupByYear = true
+  groupByYear = false
   cardView = true
 
 [sitemap]

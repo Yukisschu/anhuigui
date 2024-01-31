@@ -13,6 +13,9 @@ The adjacency matrix is a square matrix used to represent a finite graph in grap
 
 This article will first introduce the background of the **Tideman algorithm** to enable readers who are not yet familiar with this method to build a comprehensive understanding of the context. Subsequently, it will demonstrate all the main functions of this algorithm. If you are already comfortable with the prerequisite concepts of Tideman, please feel free to jump to the [core discussion part](#chapter-2-4) directly. 
 
+All the code is shared on Github, please feel free to try it out:
+{{< github repo="Yukisschu/tideman_algorithm" >}}
+
 
 ## 1. Background of the Tideman Electoral System
 
@@ -411,7 +414,7 @@ void find_winners(void)
 
 ```
 
-This article discussed how to combine graph theory and bitwise operation in Tideman algorithm in an interesting way, which is just one of many ways to implement the Tideman algorithm, yet I hope it is straightforward, entertaining, and helpful. Also, a big thanks to Juju for making the exploration journey so much fun, and CS50 staff for bringing us such an amazing [exercise](https://cs50.harvard.edu/x/2020/psets/3/tideman/)!
+This article discussed how to apply bitwise operation in Tideman voting algorithm. As one of many ways of implementing this algorithm, I hope it is straightforward, entertaining, and helpful. Also, a big thanks to Juju for making the exploration journey so much fun, and CS50 staff for bringing us such an amazing [exercise](https://cs50.harvard.edu/x/2020/psets/3/tideman/)!
 
 <div style="display:flex; gap:6px">
 {{< badge >}} tideman {{< /badge >}}
