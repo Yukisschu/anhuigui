@@ -14,6 +14,7 @@ The adjacency matrix is a square matrix used to represent a finite graph in grap
 This article will first introduce the background of the **Tideman algorithm** to enable readers who are not yet familiar with this method to build a comprehensive understanding of the context. Subsequently, it will demonstrate all the main functions of this algorithm. If you are already comfortable with the prerequisite concepts of Tideman, please feel free to jump to the [core discussion part](#chapter-2-4) directly. 
 
 All the code is shared on Github, please feel free to try it out:
+
 {{< github repo="Yukisschu/tideman_algorithm" >}}
 
 
