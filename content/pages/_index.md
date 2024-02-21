@@ -20,7 +20,7 @@ sharingLinks : false
 
 Hi!:waving_hand: My name is Anhui Gui. I graduated with a master's degree in <em>Business Administration: Digital Business</em> from the [University of Amsterdam](https://www.uva.nl/en). Previously, I studied <em>Computer Science: Financial Big Data Analysis</em> (for 1 year), <em>International Economics and Trade</em>, and <em>Accounting: CPA</em> during bachelor's studies at [Jiangxi University of Finance and Economics](https://en.wikipedia.org/wiki/Jiangxi_University_of_Finance_and_Economics).
 
-I really love weaving data into actionable insights through programming; the spark of bringing ideas into reality with lines of code is so exhilarating. Therefore, I am always on the journey of exploration and trying to share my code and ideas whenever possible. I also hope that I can bring some positive impact to our world by applying my knowledge and skills in my research.
+I really love programming. Therefore, I am always on the journey of exploration and trying to share my code and ideas whenever possible. I also hope that I can bring some positive impact to our world by applying my knowledge and skills in my research.
 
 <h3>Here are some fun facts about me in my daily life:</h3>
 
