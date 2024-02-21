@@ -44,7 +44,8 @@ smartTOCHideUnfocusedChildren = false
   showDateUpdated = true
   showAuthor = true
   showHero = true
-  heroStyle = "background" # valid options: basic, big, background
+  heroStyle = "background"
+  layoutBackgroundBlur = true
   showBreadcrumbs = true
   showDraftLabel = true
   showEdit = true
@@ -64,7 +65,8 @@ smartTOCHideUnfocusedChildren = false
 
 [list]
   showHero = true
-  layoutBackgroundBlur = true # only used when heroStyle equals background
+  heroStyle = "background"
+  layoutBackgroundBlur = true 
   showBreadcrumbs = false
   showSummary = false
   showTableOfContents = true
@@ -78,12 +80,23 @@ smartTOCHideUnfocusedChildren = false
 [taxonomy]
   showTermCount = true
   showHero = true
-  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "background"
   showBreadcrumbs = false
   #showViews = true
   #showLikes = true
   showTableOfContents = true
   cardView = false
+
+[term]
+  showHero = true
+  heroStyle = "background"
+  showBreadcrumbs = false
+  showViews = true
+  showLikes = true
+  showTableOfContents = true
+  groupByYear = false
+  cardView = true
+  cardViewScreenWidth = false
 
 [firebase]
   # apiKey = "XXXXXX"

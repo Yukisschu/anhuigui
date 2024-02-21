@@ -18,13 +18,18 @@
 [[main]]
   name = "Projects"
   pageRef = "projects"
-  weight = 20
+  weight = 30
 
 
 [[main]]
   name = "Blogs"
   pageRef = "posts"
-  weight = 30
+  weight = 20
+
+[[main]]
+  name = "Book reviews"
+  url = "https://anhuigui.notion.site/Anhui-s-Book-Reviews-4957f3e90df2474b8c583918087fd606?pvs=25"
+  weight = 40
 
 [[main]]
   identifier = "mastodon"
