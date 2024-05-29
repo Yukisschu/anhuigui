@@ -29,6 +29,11 @@
 [[main]]
   name = "Book Reviews"
   url = "https://anhuigui.notion.site/Anhui-s-Book-Reviews-4957f3e90df2474b8c583918087fd606?pvs=25"
+  weight = 35
+
+[[main]]
+  name = "Notes"
+  url = "https://anhuigui.notion.site/4d94401008fb40f48f9e8312eeaf156d?v=003e5d95e16f4c318b3eab6e880dc1d9&pvs=4"
   weight = 40
 
 [[main]]
