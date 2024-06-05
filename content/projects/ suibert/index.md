@@ -1,7 +1,7 @@
 +++
 title = 'SuiBERT: A BERT-Based Model for Suicide Identification'
 date = 2023-11-25T17:36:18+01:00
-draft = false
+draft = true
 slug = 'BERT-suicide-analysis'
 tags = ['SuiBERT', 'machine learning', 'social media analysis', 'mental health', 'user engagement', 'project']
 +++
