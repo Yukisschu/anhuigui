@@ -6,7 +6,7 @@ description: "Record and share."
 Hi! Welcome to my website! 
 :smiling_face_with_open_hands:<br>
 {{< /lead >}}
-My name is Anhui Gui, I am a graduate with a master's degree in Business Administration: Digital Business (cum laude) from the [University of Amsterdam](https://www.uva.nl/). My primary research interest focuses on the application and refinement of machine learning models for downstream descriptive and predictive tasks, as well as the development and deployment of prescriptive analytics that can generate actionable insights from online user data.<br>
+My name is Anhui Gui, I am now a master student at BDS. My primary research interest focuses on the application and refinement of machine learning models for downstream descriptive and predictive tasks, as well as the development and deployment of prescriptive analytics that can generate actionable insights from online user data.<br>
 
 I created this website to share what I love, capture some Eureka moments, and record my daily footsteps of learning and living. You can explore the [projects]({{< ref "projects" >}}) to take a look at the projects I have done or am currently working on. There are also some [summaries]({{< ref "posts" >}}) covering topics such as `data science`, `git`, `algorithms`, which I believe might be fun or useful. You can also explore via [Tags]({{< ref "tags" >}}) to help you easily find topics that align with your interests.<br>
 
